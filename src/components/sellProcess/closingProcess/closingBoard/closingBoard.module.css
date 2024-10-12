@@ -1,0 +1,53 @@
+.container{
+    height: 512px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(73, 74, 76, 1);
+    padding: 32px;
+
+    
+    >div{
+
+        
+    }
+
+
+    .mapKeys{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-content: center;
+        gap: 8px;
+
+        >.key{
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            background: rgba(249, 249, 249, 0.2);
+            font-size: 24px;
+
+        }
+    }
+
+    .bottomButtons{
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+
+        >button{
+            background: rgba(249, 249, 249, 0.2);
+            width: 124px;
+            height: 80px;
+            border-radius: 8px;
+
+           
+        }
+        >button:last-child{
+            background: rgba(94, 135, 8, 1);
+
+        }
+    }
+}
+

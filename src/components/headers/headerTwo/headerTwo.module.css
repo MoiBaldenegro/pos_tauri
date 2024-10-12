@@ -1,0 +1,25 @@
+.head {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background: #353639;
+    position: relative;
+
+}
+
+.head div {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin: 0px 16px;
+}
+
+.sellHead{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    opacity: 0.7;
+}

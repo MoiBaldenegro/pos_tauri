@@ -1,0 +1,276 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 1080px;
+    height: 698px;
+    gap: 32px
+}
+.headerRegister{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font-size: 24px;
+    height: 80px;
+     >h6{
+        text-transform: uppercase;
+     }
+}
+.headerRegister>div:first-child{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:20px;
+    font-weight: 100;
+    font-weight: 400;
+}
+.register,
+.registerProcess,
+.registerProcessTwo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1080px;
+    height: 620px;
+    padding: 40px;
+    border-radius: 16px;
+    gap: 32px;
+    background: rgba(73, 74, 76, 1);
+
+}
+.registerProcessTwo{
+    justify-content: space-evenly;
+    & .handFirst {
+        height: 500px;
+    }
+    &>div{
+        height: 200px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        font-size: 24px;
+        
+       
+        &>button:hover{
+            background: #99000f;
+        }
+
+    }
+
+   
+}
+.register{
+    flex-direction: column;
+}
+.register>button{
+    width: 240px;
+    height: 62px;
+    padding: 16px 20px 16px 20px;
+    border-radius: 12px;
+    gap: 12px;
+    background: rgba(249, 249, 249, 0.2);
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+}
+.handsContainer{
+    display: flex;
+    gap: 24px;
+}
+.handsContainer>div{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 460px;
+    height: 580px;
+    place-content: center;
+    margin-left: 50px;
+}
+.indicatorsContainer>p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+}
+.cancelBtn,
+.startCaptureBtn,
+.sendFingerBtn{
+    width: 121px;
+    height: 48px;
+    padding: 12px 16px 12px 16px;
+    border-radius: 8px;
+    gap: 8px;
+    background: rgba(249, 249, 249, 0.2);
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    font-size: 15px;
+
+}
+.sendFingerBtn{
+    background: rgba(59, 139, 168, 1);
+
+}
+.processIndicator{
+
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: rgba(36, 207, 14, 0.342);
+    transition: 400ms;
+    margin: 10px;
+    font-size: 20px;
+}
+.processIndicator:disabled{
+    background: rgba(249, 249, 249, 0.2);
+
+
+}
+.indicatorsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 450px;
+    & p {
+        font-size: 24px;
+        text-align: center;
+    }
+    & span {
+        text-align:left;
+        padding: 0 16px;
+        margin-top: -10px;
+    }
+    & button {
+        margin-bottom: 15px;
+        margin-top: -20px;
+    }
+
+    }
+}
+.indicatorsItemContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 430px;
+    height: 60px;
+    margin-top: 50px;
+}
+.hand{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    height: 500px;
+}
+.fingerIndicator{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(7, 175, 222, 0.5), rgba(7, 175, 222, 0.5)),
+radial-gradient(50% 50% at 50% 50%, rgba(7, 175, 222, 0) 62.5%, rgba(255, 255, 255, 0.75) 100%);
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    place-content: center;
+    margin-top: 40px;
+    margin-left: 25px;
+    animation: fadeInOut 1.5s ease-in-out infinite, shine 3s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes shine {
+    0% {
+      filter: brightness(100%);
+    }
+    50% {
+      filter: brightness(120%);
+    }
+    100% {
+      filter: brightness(100%);
+    }
+  }
+  .instructions{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    width: 350px;
+    height: 180px;
+    justify-content: space-around;
+    align-items: center;
+}
+.huella{
+    width: 50px;
+    height: 50px;
+}
+
+.message{
+    position: absolute;
+    left: 67%;
+    top: 80%;
+    font-size: 24px;
+    color: #18880948;
+    font-weight: 400;
+}
+
+.deleteBtn{
+    width: 140px;
+    height: 48px;
+    padding: 12px, 16px, 12px, 16px;
+    border-radius: 8px;
+    gap: 8px;
+    background: rgba(249, 249, 249, 0.2);
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes intermitence{
+    0% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.loaderContainer{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    & span{
+        font-size: 24px;
+        margin-left: 15px;
+        animation: intermitence 2s infinite ease;
+        
+    }
+}
+

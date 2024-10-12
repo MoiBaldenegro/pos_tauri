@@ -1,0 +1,37 @@
+@import "../../../styles//var/fontSize.css";
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 256px;
+    height: 344px;
+    gap: 8px;
+}
+
+.container button,
+.check {
+    display: grid;
+    width: 80px;
+    height: 80px;
+    padding: 24px;
+    border-radius: 16px;
+    gap: 10px;
+    background: #F9F9F933;
+    place-content: center;
+    font-size: var(--font-size-medium-tittle);
+    box-shadow: 2px 2px 8px 0px #00000040;
+    transition: 250ms;
+}
+
+.check{
+    background: rgba(94, 135, 8, 1) !important;
+}
+
+
+
+
+
+
+
+

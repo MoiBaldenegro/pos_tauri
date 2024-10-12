@@ -1,0 +1,186 @@
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: 1s;
+    background: rgba(0, 0, 0, 0.616);
+
+    >   *{
+        transition: .1.5s ease;
+    }
+    
+ 
+
+    > section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 1380px;
+        height: 848px;
+        padding: 32px;
+        color: var(--color-white);
+
+      
+
+        & .closeButton{
+            position: absolute;
+            top: 25px;
+            right: 20px;
+            cursor: pointer;
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+            background: rgb(136, 136, 136);
+        }
+
+        > .products{
+            width: 1160px;
+            height: 85px;
+            gap: 16px;
+            display: flex;
+            overflow: hidden;
+        }
+        
+        >article{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 1200px;
+            height: 728px;
+            padding: 32px;
+            border-radius: 16px;
+            gap: 32px;
+            background: var(--color-primary);
+        
+
+            >input{
+                width: 1136px;
+                height: 72px;
+                padding: 12px 32px 12px 32px;
+                border-radius: 12px;
+                gap: 8px;
+                background: rgba(249, 249, 249, 0.1);
+                box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.5) inset;
+                text-align: center;
+                font-size: 32px;
+            }
+            
+            & .keys{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 368px;
+            }
+
+            & div:last-child{
+                height: 80px;
+            }
+        }   
+    }  
+}
+.rowOne,
+.rowTwo,
+.rowThree,
+.rowFour{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.key{
+    width: 80px;
+    height: 80px;
+    padding: 24px;
+    border-radius: 12px;
+    background: rgba(249, 249, 249, 0.2);
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    font-size: 24px;
+}
+
+.backspace,
+.mayus{
+    width: 160px;
+    height: 80px;
+    padding: 24px;
+    border-radius: 12px;
+    background: rgba(249, 249, 249, 0.2);
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+}
+   
+h1 {
+    font-size: 32px;
+    margin-left: 10px;
+}
+
+.spaceButtons{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cleanBtn,
+.spaceBtn,
+.checkBtn{
+    height: 80px;
+    width: 224px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    background: rgba(249, 249, 249, 0.2);
+}
+
+.spaceBtn{
+    width: 656px;
+    > img{
+        margin-top: 40px;
+    }
+}
+
+.checkBtn{
+    background: rgba(94, 135, 8, 1);
+
+
+}
+
+.key:active,
+.backspace:active,
+.mayus:active,
+.cleanBtn:active,
+.spaceBtn:active,
+.checkBtn:active{
+    background-color: aliceblue;
+    color: black;
+}
+
+.productBox{
+    background: rgba(92, 93, 96, 1);
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 180px;
+    height: 72px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+    transition: .3s ease;
+}
+.productBox:hover{
+    filter: brightness(0.8);
+}
+.productBox:active{
+    transform: scale(0.88);
+    background-color: antiquewhite;
+    color: black;
+}

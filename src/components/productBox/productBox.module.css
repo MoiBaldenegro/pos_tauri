@@ -1,0 +1,15 @@
+.container {
+    display: grid;
+    place-content: center;
+    width: 200px;
+    height: 80px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: rgba(255, 166, 0, 0.692);
+    transition: 200ms;
+}
+
+.container:hover {
+    transform: scale(1.01);
+    filter: brightness(0.90);
+}

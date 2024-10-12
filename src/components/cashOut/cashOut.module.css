@@ -1,0 +1,161 @@
+.screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: 1s;
+    background: rgba(0, 0, 0, 0.616);
+
+    .container{
+      width: 440px;
+      height: 624px;
+      padding: 32px;
+      border-radius: 32px;
+      background: rgba(53, 54, 57, 1);
+      box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+  
+  
+      >div:first-child{
+          height: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 32¿px;
+  
+  
+          >div{
+              display: flex;
+              align-items: center;
+              width: 280px;
+              gap: 16px;
+              font-size: 24px;
+          }
+          >div:last-child{
+              width: 350px;
+              font-size: 16px;
+              display: flex;
+              justify-content: space-between;
+  
+              >button{
+                  height: 36px;
+                  width: 36px;
+                  border-radius: 6px;
+                  background: rgba(249, 249, 249, 0.2);
+                  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+              }
+          }
+  
+      }
+      >div:last-child{
+          height: 480px;
+          border-radius: 16px;
+          background: rgba(73, 74, 76, 1);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          padding: 16px;
+          gap: 16px;
+  
+  
+          >div:first-child{
+              width: 344px;
+              height: 98px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-evenly;
+              background: rgba(249, 249, 249, 0.1);
+              border-radius: 16px;
+              box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.5) inset;
+
+              >strong{
+                  font-size: 48px;
+                  color: rgba(240, 248, 255, 0.486);
+              }
+          }
+          >div:nth-child(2){
+              width: 344px;
+              height: 344px;
+              display: flex;
+              justify-content: space-between;
+          }
+          
+          >button{
+              width: 344px;
+              height: 62px;
+              border-radius: 12px;
+              background: rgba(94, 135, 8, 1);
+              font-size: 24px;
+              >img{
+                  height: 30px;
+                  margin: 0px 12px 0px 0px;
+              }
+          }
+  
+      }
+  }
+  .mapKeys{
+      border: 1px solid yelow;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+  
+     
+  }
+  
+  .key{
+      width: 80px;
+      height: 80px;
+      gap: 8px;
+      border-radius: 8px;
+      background: rgba(249, 249, 249, 0.2);
+      font-size: 32px;
+  }
+  
+  .rightButtons{
+      width: 80px;
+      height: 344px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+      >button{
+          width: 80px;
+          height: 168px;
+          border-radius: 8px;
+          background: rgba(249, 249, 249, 0.2);
+  
+      }
+      >button:last-child{
+          background: rgba(94, 135, 8, 1);
+         
+  
+      }
+  }
+  
+  
+  }
+
+  .closeButton {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    background: rgba(249, 249, 249, 0.2);
+
+  }

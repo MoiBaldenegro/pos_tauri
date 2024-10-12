@@ -1,0 +1,13 @@
+.printBtn{
+    width: 330px;
+    height: 62px;
+    padding: 16px 20px 16px 20px;
+    border-radius: 12px;
+    gap: 12px;
+    background: rgba(59, 139, 168, 1);
+    font-size: var(--font-size-medium);
+}
+
+.printBtn:disabled{
+    background-color: rgba(240, 248, 255, 0.137);
+}

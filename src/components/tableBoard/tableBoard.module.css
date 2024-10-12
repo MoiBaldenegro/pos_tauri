@@ -1,0 +1,55 @@
+.container{
+    width: 260px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px !important;
+
+    >input{
+        width: 256px;
+        height: 60px;
+        gap: 8px;
+        border-radius: 8px; 
+        background: rgba(249, 249, 249, 0.1);
+        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.5) inset;
+        text-align: center;
+        font-size: 32px;
+        color: rgba(240, 248, 255, 0.308);
+        font-weight: 500;
+    }
+
+    >div{
+        margin-top: 50px;
+        width: 260px;
+        height: 344px;
+        gap: 8px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        
+        >button{
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            background: rgba(249, 249, 249, 0.2);
+            font-size: 32px;
+            font-weight: 300;
+        }
+
+        >button:active{
+            background-color: aliceblue;
+            color: rgba(0, 0, 0, 0.411);
+        }
+
+        .checkButton{
+            background: rgba(94, 135, 8, 1);
+        }
+
+        .checkButton:disabled{
+            background-color: rgba(240, 248, 255, 0.267);
+        }
+
+    }
+    
+}
+

@@ -1,0 +1,65 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100vw;
+    background: #353639;
+    padding: 16px;
+
+}
+
+.footer div {
+    display: flex;
+    gap: 16px;
+    margin-left: 16px;
+}
+
+.footer div span {
+    display: flex;
+    gap: 8px;
+}
+.mainSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+    overflow-x: hidden;
+    padding: 5px;
+  }
+              
+/* ScrollingBar*/
+
+.mainSection::-webkit-scrollbar{
+    width: 0.001em;
+}
+                        
+.mainSection::-webkit-scrollbar-thumb {
+    background-color: #7D7E80;
+}
+
+.mainSection::-webkit-scrollbar-track {
+    background-color: #5C5D60;
+}
+
+.noBackground{
+    visibility: hidden;
+    
+}
+
+.backgroundRepeat {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-image: url("../../assets/icon/posWallSprite.svg");
+    background-size: repeat;
+  }
+
+
+ 

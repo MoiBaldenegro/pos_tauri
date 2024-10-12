@@ -1,0 +1,181 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+   
+    >section{
+        position: relative; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 988px;
+        height: 920px;
+        padding: 32px;
+        border-radius: 32px;
+        background: rgba(53, 54, 57, 1);
+        box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.5); 
+        
+        >div{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+
+            &>div:last-child{
+                justify-content: space-between;
+                width: 924px;
+                height: 776px; 
+            }
+        }   
+    }
+
+.closeButton {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    cursor: pointer;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    background: rgba(249, 249, 249, 0.2);
+
+  }
+
+  .firstContainer,
+  .secondContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .firstContainer{
+    background: rgba(73, 74, 76, 1);
+    width: 332px;
+    height: 776px;
+    padding: 32px;
+    border-radius: 16px;
+    gap: 16px;
+
+    &>button{
+        width: 268px;
+        height: 48px;
+        border-radius: 8px;
+        background: rgba(249, 249, 249, 0.2);
+        box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+        justify-content: left;
+        text-indent: 12px;
+        font-size: 16px;
+    }
+    & h3{
+        margin-top: 12px;
+    }
+
+    & input{
+        text-indent: 5px;
+        padding: 5px;
+        position: relative;
+        width: 125px;
+        height: 48px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        background: rgba(249, 249, 249, 0.2);
+
+
+    }
+   
+  }
+
+  .secondContainer{
+    background: rgba(73, 74, 76, 1);
+    width: 560px;
+    height: 776px;
+    padding: 32px;
+    border-radius: 16px;
+    gap: 32px;
+
+    &>section{
+        display: flex;
+        background: rgba(249, 249, 249, 0.1);
+        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.5) inset;
+        border-radius: 8px;
+
+        &>img{
+            margin-left: 15px;
+        }
+
+        & input{
+            width: 496px;
+            height: 48px;
+            gap: 10px;
+            background-color: transparent;
+            text-indent: 12px;
+        }
+    }
+
+   
+
+    &>div{
+       
+        width: 496px;
+        height: 632px;
+        gap: 16px;
+       
+
+        
+        >div{
+            display: flex;
+            margin: 0px 0px 0px 15px;
+            gap: 25px;
+
+        }
+    }
+}
+
+.reportBox{
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+    &>button{
+        margin: 0px 25px 0px 12px;
+        height: 36px;
+        width: 36px;
+        border-radius: 6px;
+        background: rgba(249, 249, 249, 0.2);
+        box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+        transition: .2s ease;
+    }
+
+    &>span{
+        margin-left: 12px;
+    }
+}
+
+.reportBox:hover{
+    background: rgba(249, 249, 249, 0.2);
+    border-radius: 8px;
+
+}
+
+article{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 610px;
+    margin: 0px 15px;
+    
+}
+
+
+
+
+ /*
+  .customCalendarButton::before {
+    content: "\1F4C5";
+    font-size: 1.2em; 
+    color: white; 
+  }
+ */

@@ -1,0 +1,223 @@
+.screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: 1s;
+    background: rgba(0, 0, 0, 0.616);
+
+    >div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        width: 1328px;
+        height: 972px;
+        padding: 32px;
+        border-radius: 32px;
+        background: var(--color-primary);
+        color: var(--color-white);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+        >div{
+            display: flex;
+        }
+        
+        >div:first-child{
+            height: 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            >div{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                font-size: 24px;
+            }   
+        }
+        >div:nth-child(2){
+            height: 188px;
+            border-radius: 16px; 
+            background: rgba(249, 249, 249, 0.1);
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            >h3{
+                margin: 8px;
+                font-size: 24px;
+                font-weight: 400;
+            }
+
+            >div{
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                overflow-y: auto;
+                gap: 8px;
+                align-items: flex-start;
+                
+        
+                >div{
+                    width: fit-content;
+                    height: 48px;
+                    border-radius: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px solid rgba(249, 249, 249, 0.2);
+                    padding: 0px 0px 0px 16px;
+                    transition: .25s ease;
+                    background: rgba(249, 249, 249, 0.1);
+
+                    
+                    >button{
+                        background-color: transparent;
+                        box-shadow: none;
+                        cursor: pointer;
+                    }
+                 
+                }
+
+                >div:hover{
+                    background-color: rgba(240, 248, 255, 0.192);
+                }
+
+            }
+
+        }
+
+        >div:nth-child(3){
+            height: 528px; 
+            display: flex;
+            justify-content: space-between;
+            gap: 32px;
+
+            
+            >div:first-child{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+
+                >div:first-child{
+                    height: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+
+                    >h3{
+                        margin: 8px;
+                    }
+                } 
+
+                >div:last-child{
+                    height: 472px;
+                    background: rgba(73, 74, 76, 1);
+                    border-radius: 16px;
+                    padding: 16px;  
+                    gap: 8px;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(159px, 1fr));
+                    grid-template-rows: repeat(auto-fit, minmax(48px, 48px));
+                    overflow-y: auto;
+
+                    
+
+                    >button{
+                        height: 48px;
+                    }
+                }        
+            }
+            >div:last-child{
+                min-width: 704px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+                >div:first-child{
+                    height: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    >h3{
+                        margin: 8px;
+                    }
+                } 
+
+                >div:last-child{
+                    height: 472px;
+                    border-radius: 16px;
+                    gap: 16px;
+
+
+                    >div{
+                        display: flex;
+                    }
+
+                    >div:first-child{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                        overflow-y: auto;
+
+                        >button{
+                            background: rgba(189, 126, 109, 1);
+
+                        }
+
+                    }
+                    >div:last-child{
+                    min-width: 528px;
+                    background: rgba(73, 74, 76, 1);
+                    border-radius: 16px;
+                    padding: 16px;  
+                    gap: 8px;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(159px, 1fr));
+                    grid-template-rows: repeat(auto-fit, minmax(48px, 48px));
+                    overflow-y: auto;
+
+                    >button{
+                        height: 48px;
+                    }
+
+                    }
+                } 
+            }
+        }
+
+        >div:last-child{
+            display: flex;
+            justify-content: space-between;
+            height: 48px;
+      }
+    }
+  }
+
+  .closeButton {
+    cursor: pointer;
+    width: 36px;
+    height: 36px !important;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    background: rgba(249, 249, 249, 0.2);
+
+  }
+
+  .saveBtn{
+    background: rgba(94, 135, 8, 1);
+
+  }

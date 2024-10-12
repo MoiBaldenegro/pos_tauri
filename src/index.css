@@ -1,0 +1,15 @@
+@import "./fonts/fonts.css";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Tomate-font;
+  color: #f9f9f9;
+  font-weight: 100;
+
+}
+body {
+  background: #1F2023;
+}
+

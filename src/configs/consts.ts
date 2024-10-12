@@ -1,0 +1,3 @@
+export const OPEN_MORE_ACTIONS = "OPEN_MORE_ACTIONS";
+
+export const CONFIRM_ACTIONS = "CONFIRM_ACTIONS";

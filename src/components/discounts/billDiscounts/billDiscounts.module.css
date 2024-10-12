@@ -1,0 +1,102 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1312px;
+    height: 778px;
+    border-radius: 16px;
+    padding: 24px;
+    gap: 32px;    
+
+    .discountContainer{
+        width: 912px;
+        height: 796px;
+        border-radius: 16px;
+        background: rgba(73, 74, 76, 1);
+        box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.5);
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        >div:first-child{
+            height: 85%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            >div:first-child{
+                width: 400px;
+                
+                >h3{
+                    height: 48px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 24px;
+                }
+
+                >div{
+                    height: 572px;
+                    border-radius: 16px;
+                    background: rgba(92, 93, 96, 1);
+                    padding: 32px;
+                    position:relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    >strong{
+                        margin-bottom: 60px;
+                        z-index: 1000;
+                        font-size: 96px;
+                    }
+
+                }
+            }
+
+            >div:last-child{
+                width: 400px;
+
+                >h3{
+                    height: 48px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 24px;
+
+                }
+
+            }
+
+        }
+
+        >div:last-child{
+            height: 10%;
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            >button{
+                width: 124px;
+                height: 48px;
+                border-radius: 8px;
+                background: rgba(249, 249, 249, 0.2);
+
+            }
+
+        }
+    }
+    
+}
+
+.table{
+    height: 280px;
+    width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 60px;
+}
+
+
+

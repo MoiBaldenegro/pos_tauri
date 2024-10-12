@@ -1,0 +1,175 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1312px;
+    height: 778px;
+    border-radius: 16px;
+    padding: 24px;
+    gap: 32px;    
+
+    .discountContainer{
+        width: 464px;
+        height: 796px;
+        border-radius: 16px;
+        background: rgba(73, 74, 76, 1);
+        box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.5);
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        >div:first-child{
+            height: 85%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            >div:first-child{
+                width: 400px;
+                
+                >h3{
+                    height: 48px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 24px;
+                }
+
+                >div{
+                    height: 572px;
+                    border-radius: 16px;
+                    background: rgba(92, 93, 96, 1);
+                    padding: 32px;
+                }
+            }
+
+            >div:last-child{
+                width: 400px;
+
+                >h3{
+                    height: 48px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 24px;
+                }
+
+            }
+
+        }
+
+        >div:last-child{
+            height: 10%;
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            >button{
+                width: 124px;
+                height: 48px;
+                border-radius: 8px;
+                background: rgba(249, 249, 249, 0.2);
+
+            }
+
+        }
+    }
+    
+}
+
+/* Select styles */
+.customSelect{
+    position: relative;
+    width: 120px;
+    height: 48px;
+    background: rgba(249, 249, 249, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 16px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+
+  }
+  .selectTrigger {
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    
+  }
+  .options {
+    position: absolute;
+    background-color: var(--color-gray-hover);
+    top: 120%;
+    left: 0;
+    width: 120px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    max-height: 310px;overflow-y: auto;
+  }
+  
+
+  .hidden{
+    display: none;
+  }
+  .option {
+    padding: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #33333333;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 14px;
+  
+  }
+  .option:hover {
+    background-color: #6e717442;
+    
+  }
+  
+  /* //////////////*/
+
+  .head{
+    display: flex;
+
+    flex-direction: column;
+    align-items:center ;
+
+    >div>div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+  }
+
+  .productsContainer{
+    height: 400px;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px 32px 10px 32px;
+
+    .productBox,
+    .productBoxEmpty{
+        width: 100%;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .productBoxEmpty{
+        justify-content: center;
+    }
+}

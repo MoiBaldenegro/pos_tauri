@@ -1,0 +1,44 @@
+/* customSelect.module.css */
+
+.customSelect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blueviolet;
+    position: relative;
+    width: 200px;
+  }
+  
+  .select-header {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .select-header.open {
+    border-bottom: 1px solid transparent;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .option {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .option:hover {
+    background-color: #f0f0f0;
+  }
+  

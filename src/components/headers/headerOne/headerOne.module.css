@@ -1,0 +1,9 @@
+.head,
+.head p {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 20px 0px 0px 15px;
+    gap: 16px;
+}

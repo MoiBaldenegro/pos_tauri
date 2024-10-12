@@ -1,0 +1,47 @@
+.table {
+    margin: 8px 0px 8px 24px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    transition: 150ms;
+}
+
+.table div {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.table div:first-child {
+    margin-top: 10px;
+    padding: 10px 0px;
+}
+
+.table div:last-child {
+    margin-bottom: 8px;
+    padding: 8px 0px;
+}
+
+.table p {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.table p,
+.table span {
+    z-index: 100;
+}
+
+.table img {
+    position: absolute;
+    z-index: 10;
+}
+
+.table:hover {
+    transform: scale(1.02);
+}

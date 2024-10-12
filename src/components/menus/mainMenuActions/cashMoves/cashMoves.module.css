@@ -1,0 +1,153 @@
+.screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: 1s;
+    background: rgba(0, 0, 0, 0.616);
+    border: 2px solid yellow;
+
+    >div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        width: 1114px;
+        height: 857px;
+        padding: 32px;
+        border-radius: 32px;
+        background: rgba(53, 54, 57, 1);
+        color: var(--color-white);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+        >div:nth-child(2){
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            height: 48px;
+            display: flex;
+            font-size: 24px;
+        }
+        
+        >div:nth-child(3){
+            height: 633px;
+            padding: 32px;
+            background: rgba(249, 249, 249, 0.1);
+            border-radius: 16px;
+
+
+            >div{
+                display: flex;
+                flex-direction: column;
+
+
+
+             >div:first-child{
+                >button{
+                    justify-content: flex-start;
+                    background-color: transparent;
+                    box-shadow: none;
+                    font-size: 16px;
+                    gap: 12px;
+
+                    >img{
+                        opacity: .3;
+                    }
+                }
+
+                >button:first-child{
+                    width: 220px;
+                }
+
+                >button:nth-child(2){
+                    width: 180px;
+                }
+                >button:nth-child(3){
+                    width: 180px;
+                }
+                >button:nth-child(4){
+                    width: 180px;
+                }
+
+                >button:hover{
+                    background-color: rgba(240, 248, 255, 0.020);
+                }
+             }
+
+                >div{
+                    display: flex;
+                    height: 48px;
+                    align-items: center;
+
+
+
+                    >h3{
+                        font-size: 16px;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+
+                    >h3:first-child{
+                        width: 210px;
+                        justify-content: flex-start;
+                    }
+                    >h3:nth-child(2){
+                        width: 145px;
+                    }
+                    >h3:nth-child(3){
+                        width: 185px;
+                    }
+                    >h3:nth-child(4){
+                        width: 160px;
+                    }
+                    >h3:nth-child(5){
+                        width: 152px;
+                    }
+                    >h3:nth-child(6){
+                        width: 115px;
+                    }
+                }
+
+                }
+
+                
+            }
+            >div:last-child{
+                display: flex;
+                justify-content: flex-end;
+                gap: 16px;
+            }
+        }
+        
+    }
+   
+  .closeButton {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    background: rgba(249, 249, 249, 0.2);
+
+  }
+
+  .userLine{
+    background-color: rgba(240, 248, 255, 0.151);
+    border-radius: 8px;
+    padding: 16px;
+
+  }
+
+  .hidden{
+    padding: 16px;
+  }
+

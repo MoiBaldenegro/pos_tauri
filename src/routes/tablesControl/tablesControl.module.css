@@ -1,0 +1,181 @@
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+
+    >.mainSection{ 
+        height: 85%;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 16px;
+
+
+        >div:first-child{
+            height: 100%;
+            width: 75%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            display: grid;
+            grid-template-columns: repeat(10, 125px);
+            grid-template-rows: repeat(20, 125px);
+            gap: 15px;
+            padding-left: 8px;
+
+            >div{
+                position: relative;
+                >img{
+                    position: absolute;
+                }
+                >h3{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 1000;                
+                }
+                >h4{
+                    position: absolute;
+                    left: 50%;
+                    top: 10%;
+                    transform: translate(-50%, -0%);
+                    z-index: 1000;  
+
+                }
+                
+                >h5{
+                    position: absolute;
+                    top: 70%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 1000;  
+                    
+                }
+                
+            }
+        }
+        >div:last-child{
+            height: 100%;
+            width: 413px;
+            background: rgba(53, 54, 57, 1);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            gap: 16px;
+
+            >div:first-child{
+                display: flex;
+                gap: 16px;
+                justify-content: flex-start;
+                align-items: center;
+                font-size: 24px;
+                height: 48px;
+            }
+            >div:nth-child(2){
+                display: grid;
+                grid-template-columns: 80px 150px 120px;
+                grid-template-rows: repeat(2, 24px);
+                height: 48px;
+                
+                >h3{
+                    display: flex;
+                    align-items: flex-end;
+                    margin-left: 12px;
+
+                }
+                >h3:first-child{
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+
+                }
+                >h3:nth-child(2){
+                    grid-column: 2/3;
+                    grid-row: 1/2;
+
+                }
+                >h3:nth-child(3){
+                    grid-column: 3/4;
+                    grid-row: 1/2;
+
+                }
+
+                >div:last-child{
+                    grid-row: 2/3;
+                    grid-template-columns: 1/4;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 12px;
+                    
+                }
+            }
+
+            >div:last-child{
+                height: 100%;
+                width: 100%;
+                overflow-x: hidden;
+                overflow-y: auto;
+
+
+                >.userBox{
+                    display: flex;
+                    align-items: center;
+                    height: 48px;
+                    border-radius: 8px;
+                    transition: .2s ease;
+
+                    >h4:first-child{
+                        width: 100px;
+                        text-align: center;
+                    }
+                    >h4:nth-child(2){
+                        width: 160px;
+                        font-size: 12px;
+                    }
+
+                    >h4:last-child{
+                        width: 150px;
+                        font-size: 12px;
+                    }
+                }
+
+                >.userBox:hover{
+                    background-color: rgba(240, 248, 255, 0.158);
+                }
+            } 
+        } 
+    }
+
+    >footer{
+        height: 94px;
+        padding: 16px 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        >div:first-child{
+            display: flex;
+            gap: 16px;
+            width: 250px;
+            height: 48px;
+        }
+
+        >div:nth-child(2){
+            display: flex;
+            gap: 16px;
+            width: 850px;
+            height: 48px;
+        }
+
+        >div:last-child{
+            gap: 16px;
+            width: 250px;
+            height: 48px;
+        }
+    }
+}
+
+.clean{
+    height: 18px;
+}

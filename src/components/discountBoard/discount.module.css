@@ -1,0 +1,88 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 572px;
+    width: 400px;
+    border-radius: 16px;
+    background: rgba(92, 93, 96, 1);
+    padding: 64px 32px;
+    gap: 16px;
+
+
+    
+   .indicator{
+        border-radius: 16px;
+        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.5) inset;
+        z-index: 1000;
+        padding: 0px 0px 0px 96px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    >span{
+        font-size: 32px;
+        margin: 0px 64px 0px 8px;
+        display: flex;
+        justify-content: center;
+        padding: 6px;
+    }
+
+    >input{
+        z-index: 0;
+        background-color: transparent; 
+        display: flex;
+        flex-direction: column;
+       text-align: right;
+       font-size: 32px;
+       width: 150px;
+    }
+
+   }
+
+    >div{
+        width: 100%;
+        height: 344px;
+        display: flex;
+
+        >div:first-child{
+            width: 256px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            
+            >button{
+                width: 80px;
+                height: 80px;
+                gap: 8px;
+                border-radius: 8px;
+                background: rgba(249, 249, 249, 0.2);
+                font-size: 32px;
+            }
+        }
+
+        >div:last-child{
+            width: 80px;
+            height: 344px;
+
+            >button{
+                width: 80px;
+                height: 166px;
+                border-radius: 8px;
+                background: rgba(249, 249, 249, 0.2);
+            }
+
+            >button:first-child{
+                margin-bottom: 5px;
+            }
+
+            >:last-child{
+                background: rgba(59, 139, 168, 1);
+                font-size: 48px;
+            }
+
+          
+        }
+    }
+}

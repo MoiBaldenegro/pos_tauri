@@ -1,0 +1,279 @@
+.screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: 1s;
+    background: rgba(0, 0, 0, 0.616);
+
+    >div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        width: 1103px;
+        height: 798px;
+        padding: 32px;
+        border-radius: 32px;
+        background: var(--color-primary);
+        color: var(--color-white);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+        >div{
+          height: 48px;
+          align-items: center;
+          display: flex;
+          justify-content: space-between;
+
+        }
+
+        >div:first-child{
+
+          >div{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 24px;
+          }
+          
+        }
+
+        >div:last-child{
+          height: 654px;
+          display: flex;
+          gap: 32px;
+
+          >div{
+            border-radius: 16px;
+            background: rgba(73, 74, 76, 1);
+
+          }
+
+          >div:first-child{
+            height: 100%;
+            width: 100%;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            
+            >div:first-child{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              height: 48px;
+
+              >h3{
+                margin-top: 10px;
+                margin-left: 15px;
+              }
+            }
+
+            >div:last-child{
+              min-height: 560px;
+              display: flex;
+              flex-direction: column;
+              height: 48px;
+              gap: 8px;
+              overflow-y: auto;
+
+              >button{
+                height: 48px;
+                justify-content: flex-start;
+                font-size: 16px;
+              }
+            }
+          }
+
+          >div:last-child{
+            height: 100%;
+            width: 100%;
+            min-width: 638px; 
+            padding: 32px; 
+            display: flex;   
+            flex-direction: column;       
+
+            >div:first-child{
+              height: 48px;
+              display: flex;
+              justify-content: space-between;
+
+              >div:last-child{
+                width: 80%;
+                border-radius: 8px;
+                background: rgba(249, 249, 249, 0.1);
+                display: flex;
+                align-items: center;
+                padding-left: 10px;
+                gap: 8px;
+                box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.5) inset;
+
+
+               >img{
+                opacity: .5;
+               }
+
+              >input{
+                width: 100%;
+                background-color: transparent;
+
+              }
+            }
+          }
+
+          >div:last-child{
+            height:100%;
+           
+
+            >div:first-child{
+              height: 48px;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+
+              >div{
+                height: 35px;
+                display: flex;
+                align-items: center;
+                gap: 32px;
+                padding-left: 25px;
+                
+               
+
+                >h3:first-child{
+                  width: 300px;
+                 
+                }
+              }
+
+             
+            }
+            >div:last-child{
+              overflow-x: hidden;
+              overflow-y: auto;
+              height: 500px;
+
+              >div{
+                display: flex;
+                align-items: center;
+                padding: 8px;
+                font-size: 12px;
+                transition: .2s ease;
+                display: flex;
+                justify-content: space-between;
+                border-radius: 8px;
+
+
+                >h3{
+                  width: 320px;
+                  overflow-x: hidden;
+                }
+                >div:nth-child(2){
+                  display: flex;
+                  justify-content: center;
+                  gap: 8px;
+                  width: 160px;
+                  padding-right: 25px;
+
+                }
+                >div:last-child{
+                  width:70px;
+                
+                  justify-content: flex-start;
+                  >button{
+                    width: 36px;
+                    height: 36px;
+
+                  }
+                 
+                }
+
+                
+              }
+              
+              >div:hover{
+                background-color: rgba(250, 235, 215, 0.055);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .closeButton {
+    top: 25px;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    background: rgba(249, 249, 249, 0.2);
+
+  }
+
+  /* Select styles */
+  .customSelect{
+    position: relative;
+    width: 100px;
+    height: 48px;
+    background: rgba(249, 249, 249, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+   
+  }
+  .selectTrigger {
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: var(--font-size-small);
+  }
+  .options {
+    position: absolute;
+    background-color: var(--color-gray-hover);
+    top: 120%;
+    left: 0;
+    width: 100px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    color: #333;
+    font-size: var(--font-size-small);
+  }
+  
+
+  .hidden{
+    display: none;
+  }
+  .option {
+    padding: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #33333333;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: black;
+  
+  }
+  .option:hover {
+    background-color: #6e717442;
+    
+  }
+  
+  /* /////////////////////*/

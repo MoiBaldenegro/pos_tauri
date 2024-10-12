@@ -1,0 +1,71 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    background: #353639;
+    padding: 0px 32px;
+    min-height: 94px;
+
+
+    >div {
+        display: flex;
+        gap: 24px;
+        width: 400px;
+        justify-content: end;
+
+
+    >span {
+        display: flex;
+        gap: 8px;
+    }
+}
+
+
+    >div:first-child{
+        width: 250px;
+        display: flex;
+        justify-content: flex-start;
+
+        >button{
+            width: 94px;
+            height: 48px;
+            border-radius: 8px;
+            background: rgba(249, 249, 249, 0.2);
+            font-size: 16px;
+        }
+    }
+}
+
+
+.mainSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+    overflow-x: hidden;
+    padding: 5px;
+  }
+              
+/* ScrollingBar*/
+
+.mainSection::-webkit-scrollbar{
+    width: 0.001em;
+}
+                        
+.mainSection::-webkit-scrollbar-thumb {
+    background-color: #7D7E80;
+}
+
+.mainSection::-webkit-scrollbar-track {
+    background-color: #5C5D60;
+}
+
+ 

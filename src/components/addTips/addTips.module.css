@@ -1,0 +1,161 @@
+.screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: 1s;
+    background: rgba(0, 0, 0, 0.616);
+
+
+    >div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 440px;
+        height: 624px;
+        padding: 32px;
+        border-radius: 32px;
+        background: var(--color-primary);
+        color: var(--color-white);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        gap: 16px;
+
+        >div{
+           width: 100%;
+           height: 100%;
+        }
+
+        .head{
+          height: 48px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          >div{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            >span{
+              font-size: 28px;
+              font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  .closeButton {
+    top: 25px;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    background: rgba(249, 249, 249, 0.2);
+
+  }
+
+  .board{
+    padding: 32px 16px;
+    background: #494A4C;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    
+  }
+
+  .input{
+    background: #F9F9F91A;
+    box-shadow: 2px 2px 4px 0px #00000080 inset;
+    border-radius: 16px;
+    height: 72px;
+    display: flex;
+    gap: 16px;
+
+    >input{
+      height: 72px;
+      width: 100%;
+      background: transparent;
+      text-align: end;
+      font-size: 24px;
+    }
+
+    >span{
+      padding: 8px;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 32px;
+    }
+  }
+
+  .pinboard{
+    width: 100%;
+    height: 344px;
+    display: flex;
+    gap: 8px;
+
+    >div{
+      width: 100%;
+    }
+
+    >div:last-child{
+      width: 88px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 8px;
+
+      >button{
+        height: 80px;
+        width: 80px;
+      }
+
+    }
+  }
+
+  .checkButton{
+    height: 168px !important;
+    background: #5E8708;
+  }
+
+  
+
+.backButton img{
+  height: 25px;
+
+}
+.percentButton{
+  font-size: 32px;
+  background: #3B8BA8;
+
+}
+.keys{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 8px;
+
+  >button{
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.key{
+  font-size: 32px;
+}
+

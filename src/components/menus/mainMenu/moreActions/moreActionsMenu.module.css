@@ -1,0 +1,80 @@
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: 1s;
+    background: rgba(0, 0, 0, 0.795);
+  }
+  .modal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    width: 1750px;
+    height: 926px;
+    padding: 32px;
+    border-radius: 32px;
+    color: var(--color-white);
+     /* border: 5px solid yellow; */
+      }
+  .closeButton {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(82, 81, 81);
+
+  }
+
+  .actionsContainer{
+    background: rgba(73, 74, 76, 1);
+    min-width: 324px;
+    min-height: 846px;
+    max-height: 846px;
+    border-radius: 16px;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.5);
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 24px 16px;
+
+    > button{
+      width: 95%;
+      border-radius: 8px;
+      height: 48px;
+      background: rgba(249, 249, 249, 0.2);
+      justify-content:  flex-start;
+      padding: 20px;
+      font-size: 16px;
+      box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);      
+    }
+  }
+
+  .errors{
+    position: relative;
+    width: 25%;
+    height: 32%;
+    border-radius: 16px;
+    background: rgba(53, 54, 57, 1);
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 32px;
+  }

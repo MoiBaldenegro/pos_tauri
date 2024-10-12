@@ -1,0 +1,101 @@
+@import "../../styles/var/fontSize.css";
+@import "../../styles/var/colors.css";
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    font-size: var(--font-size-small);
+}
+
+.head {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 20px 0px 0px 15px;
+}
+
+.mainSection {
+    width: 100vw;
+    height: 620px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sectionOne,
+.sectionTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 709.09px;
+    height: 380px;
+    padding: 64px 128px 64px 128px;
+    border-radius: 64px;
+    gap: 32px;
+    background: linear-gradient(180deg, rgba(249, 249, 249, 0.15) 0%, rgba(249, 249, 249, 0.03) 100%);
+}
+
+.sectionTwo {
+    width: 448px;
+    height: 620px;
+    padding: 64px 96px 64px 96px;
+    border-radius: 64px;
+    gap: 32px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 94px;
+}
+
+.nums {
+    display: flex;
+    gap: 32px;
+}
+
+.footer div button:first-child,
+.footer div button:nth-child(3),
+.footer div button:last-child {
+    background: #F9F9F91A;
+    width: 62px;
+    height: 62px;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.footer div {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.footer div:last-child {
+    margin-right: 16px;
+}
+
+main section h4 {
+    font-weight: var(--font-size-medium-tittle);
+    font-weight: 500;
+}
+
+.sign{
+    width: 250px;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    >span{
+        font-size: 32px;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+    }
+}

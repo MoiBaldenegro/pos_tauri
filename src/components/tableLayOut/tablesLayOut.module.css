@@ -1,0 +1,31 @@
+.container {
+    border: 1px solid blue;
+    height: 800px; /* Altura del contenedor principal */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    overflow: auto; /* Agregar desplazamiento vertical */
+  }
+  
+  .container > div {
+    outline: 1px solid #0c6aa167;
+    width: 800px; /* Ancho del área visible del contenedor */
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas fijas */
+    grid-auto-rows: repeat(3, 1fr); /* Altura fija de las filas */
+    gap: 16px; /* Espacio entre elementos */
+    padding: 32px;
+  }
+  
+  .item {
+    border: 1px solid red;
+    width: 100%; /* Ancho completo del contenedor de columna */
+    height: 100px; /* Altura completa del contenedor de fila */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(127, 255, 212, 0.247);
+  }
+  
